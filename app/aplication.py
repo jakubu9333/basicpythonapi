@@ -1,4 +1,4 @@
-from flask import Flask, abort, request,render_template
+from flask import Flask, abort, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 import requests
 
@@ -120,4 +120,3 @@ def home():
 
 if __name__ == '__main__':
     app.run()
-
