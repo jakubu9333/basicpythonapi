@@ -1,4 +1,4 @@
-from flask import Flask, abort, request
+from flask import Flask, abort, request,render_template
 from flask_sqlalchemy import SQLAlchemy
 import requests
 
@@ -102,11 +102,11 @@ def delete_post(id):
 @app.patch("/posts/<id>")
 def update_post(id):
     post = Post.query.get_or_404(id)
-    json = request.json
-    new_title = json.get("title")
+    args = request.args
+    new_title = args.get("title")
     if new_title is not None:
         post.title = new_title
-    new_body = json.get("body")
+    new_body = args.get("body")
     if new_body is not None:
         post.body = new_body
     db.session.commit()
@@ -115,7 +115,7 @@ def update_post(id):
 
 @app.route('/')
 def home():
-    return "xd"
+    return render_template("index.html"), 200
 
 
 if __name__ == '__main__':
