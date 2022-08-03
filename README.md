@@ -30,4 +30,5 @@ docker run -p 5000:5000 --name amceftask amceftask
 
 In both ways application will open on localhost:5000
 
-## 
+## Documentation
+Documentation is on localhost:5000/
