@@ -1,5 +1,5 @@
-# AMCEF task
-Amcef task is microservice api for posts.
+#  Basic python api
+Basic python api is microservice api for posts.
 
 ## Installation
 
