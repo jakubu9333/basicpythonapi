@@ -1,5 +1,5 @@
-# AMCEF task
-Amcef task is microservice api for posts.
+#  Basic python api
+Basic python api is microservice api for posts.
 
 ## Installation
 
@@ -30,4 +30,5 @@ docker run -p 5000:5000 --name amceftask amceftask
 
 In both ways application will open on localhost:5000
 
-## 
+## Documentation
+Documentation is on localhost:5000/
