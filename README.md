@@ -24,8 +24,8 @@ python app/aplication.py
 
 ### Docker
 ```bash
-docker build -t amceftask .
-docker run -p 5000:5000 --name amceftask amceftask 
+docker build -t customname .
+docker run -p 5000:5000 --name customname customname 
  ```
 
 In both ways application will open on localhost:5000
